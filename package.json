@@ -1,6 +1,6 @@
 {
   "name": "updatetest",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "testing udpate for electron",
   "main": "main.js",
   "scripts": {
