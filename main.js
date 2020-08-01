@@ -13,14 +13,10 @@ function createWindow () {
   });
   mainWindow.loadFile('index.html');
   mainWindow.on('closed', function () {
-    mainWindow = null;
-    
-    
-    mainWindow.once('ready-to-show', () => {
+    mainWindow = null;    
+  });
+  mainWindow.once('ready-to-show', () => {
     autoUpdater.checkForUpdatesAndNotify();
-    });
-
-    
   });
 }
 
