@@ -1,11 +1,13 @@
 {
   "name": "updatetest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "testing udpate for electron",
   "main": "main.js",
   "scripts": {
-  "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder build  --win --publish never",
+    "deploy": "electron-builder build  --win --publish always"
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,5 @@
   },
   "dependencies": {
     "electron-updater": "^4.3.4"
-  },
-
-  "build": "electron-builder build  --win --publish never",
-"deploy": "electron-builder build  --win --publish always"
+  }
 }
