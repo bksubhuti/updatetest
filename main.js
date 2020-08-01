@@ -15,7 +15,7 @@ function createWindow () {
   mainWindow.on('closed', function () {
     mainWindow = null;    
   });
-  mainWindow.once('ready-to-show', () => {
+  mainWindow.webContents.on('dom-ready', () => {
     autoUpdater.checkForUpdatesAndNotify();
   });
 }
